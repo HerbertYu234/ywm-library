@@ -5,8 +5,11 @@ package ywm.library.shared.model;
  */
 public enum ArticleType {
 
+    T1("心中江上如画"),
+    COMPUTER("计算机/程序"),
     EMOTION("情感类"),
-    SCIENCES("社科类");
+    SCIENCES("社科类"),
+    OTHER("其他");
 
     private String desc;
 
