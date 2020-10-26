@@ -53,8 +53,8 @@ public class Bool<T> {
     /**
      * 正数 >0
      */
-    public Action<T> whenPositiveNum(Function<T, Double> fun) {
-        return new <T>Action(Objects.nonNull(fun.apply(t)) && fun.apply(t) > 0, this);
+    public Action<T> whenPositiveNum(Function<T, Number> fun) {
+        return new <T>Action(Objects.nonNull(fun.apply(t)) && fun.apply(t).doubleValue() > 0d, this);
     }
 
 

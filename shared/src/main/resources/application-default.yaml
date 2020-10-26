@@ -1,0 +1,51 @@
+---
+
+
+spring.profiles: default
+logging.level.idaas: debug
+
+host: 127.0.0.1
+
+
+# session过期时间配置
+spring.session.timeout: 86400
+
+
+cassandra.contact.points: ${host}
+cassandra.port: 9042
+cassandra.keyspace: idaas
+
+
+mongo.uri: mongodb://${host}:27017/y-web-manage?safe=true
+
+
+
+
+# 连接池配置
+#oracle.jdbc.driver.OracleDriver ，org.hsqldb.jdbc.JDBCDriver
+#spring.datasource.driver-class-name: com.mysql.jdbc.Driver
+#jdbc:oracle:thin:@localhost:1521:orcl
+spring.datasource.url: jdbc:mysql://${host}:3306/y-web-manage?useUnicode=true&amp;characterEncoding=UTF-8
+spring.datasource.username: root
+spring.datasource.password:
+spring.jpa.properties.hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
+
+
+# mongodb
+#spring.data.mongodb.uri: ${mongo.uri} todo
+spring.data.mongodb.host: ${host}
+spring.data.mongodb.port: 27017
+spring.data.mongodb.database: y-web-manage
+
+#elasticsearch.cluster.name: tianxin
+#elasticsearch.cluster.nodes: ${host}:9300
+#
+#kafka.brokers: ${host}:9092
+#
+#
+#spica.redis.uri: redis://${host}:6379/0?timeout=6s
+
+
+# 文件服务器
+#spica.storage.url: http://weed.shtianxin.com/
+
