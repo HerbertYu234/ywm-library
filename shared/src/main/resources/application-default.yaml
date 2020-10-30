@@ -20,6 +20,7 @@ cassandra.keyspace: idaas
 
 wolf.security.loginUrl: http://${host}:9999/login
 
+spring.cloud.etcd.uris: http://${host}:2379
 
 # 连接池配置
 #oracle.jdbc.driver.OracleDriver ，org.hsqldb.jdbc.JDBCDriver
