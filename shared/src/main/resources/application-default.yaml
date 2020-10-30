@@ -18,7 +18,7 @@ cassandra.keyspace: idaas
 
 mongo.uri: mongodb://${host}:27017/y-web-manage?safe=true
 
-
+wolf.security.loginUrl: http://${host}:9999/login
 
 
 # 连接池配置

@@ -24,6 +24,18 @@
             <scope>provided</scope>
         </dependency>
 
+        <dependency>
+            <groupId>com.yhb.wolf</groupId>
+            <artifactId>wolf-security</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.yhb.wolf</groupId>
+            <artifactId>cloudlet</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
     </dependencies>
     
 </project>
