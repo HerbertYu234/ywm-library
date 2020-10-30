@@ -16,7 +16,7 @@ cassandra.port: 9042
 cassandra.keyspace: idaas
 
 
-mongo.uri: mongodb://${host}:27017/y-web-manage?safe=true
+#mongo.uri: mongodb://${host}:27017/y-web-manage?safe=true
 
 wolf.security.loginUrl: http://${host}:9999/login
 
@@ -31,8 +31,8 @@ spring.datasource.password:
 spring.jpa.properties.hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
 
 
-# mongodb
-#spring.data.mongodb.uri: ${mongo.uri} todo
+## mongodb
+#spring.data.mongodb.uri: ${mongo.uri}
 spring.data.mongodb.host: ${host}
 spring.data.mongodb.port: 27017
 spring.data.mongodb.database: y-web-manage
